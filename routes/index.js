@@ -11,7 +11,7 @@ var buildController = require('../controllers/buildController');
 
 router.get('/', buildController.buildList);
 
-router.get('/:corTicketId', buildController.buildListApi);
+router.get('/api/list', buildController.buildListApi);
 
 router.get('/newBuild', function(req, res, next){
   var results = JSON.stringify(req.body);

@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    form(method='POST' action='/test')
+        div.form-group
+            label(for='name') User
+            input#name.form-control(name="username" type="text")
+            label(for='password') Password
+            input#password.form-control(name="password" type="password")
+        button.btn.btn-primary(type='submit') Submit

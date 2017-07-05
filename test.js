@@ -34,10 +34,10 @@ function sumOddNumbers() {
     for(var x = 0; x < 5000; x++){
       if(x % 2 > 0){
         sum = sum + x;
-        console.log(sum);
+        //console.log(sum);
       }
     }
-    console.log(sum);
+    //console.log(sum);
     return sum;
 }
 console.log(sumOddNumbers());
